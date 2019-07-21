@@ -48,5 +48,3 @@ As a user
 So that I can show love for a photo
 I would like to be able to like photos
 ```
-
-blah blah blah
