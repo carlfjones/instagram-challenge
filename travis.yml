@@ -1,14 +1,14 @@
 language: ruby
-services:
-- postgresql
-script:
-- bundle exec rake db:create
-- bundle exec rake db:migrate
-- bundle exec rake
+# services:
+# - postgresql
+# script:
+# - bundle exec rake db:create
+# - bundle exec rake db:migrate
+# - bundle exec rake
 deploy:
   provider: heroku
-  app: instagramchallenge1
-  api_key:
-    secure:
-    repo: carlfjones/instagram-challenge
-    branch: master
+  # app: instagramchallenge1
+  # api_key:
+  #   secure:
+  #   repo: carlfjones/instagram-challenge
+  #   branch: master
