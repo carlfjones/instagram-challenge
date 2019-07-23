@@ -1,16 +1,17 @@
 language: ruby
 rvm:
-  - 2.6.0
-# services:
-# - postgresql
-# script:
-# - bundle exec rake db:create
-# - bundle exec rake db:migrate
-# - bundle exec rake
+- 2.6.0
+services:
+- postgresql
+script:
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rake
 deploy:
   provider: heroku
-  # app: instagramchallenge1
-  # api_key:
-  #   secure:
-  #   repo: carlfjones/instagram-challenge
-  #   branch: master
+  api_key:
+    secure: Ov4yMVVf6ZLX65oVeeAV22lQ4NqDxR8Bu9vaucqEfgijReCH3jQN8bq0wtjAl4cA3DqwXNosFKuFIlZR7iej4GmSVXfgloZNg/Ux7x48RahHlZKeV5SodR3yxOGlrF326hCb53yevhNxqgLnkbdBCSDOALoXa5lYRuCSN80V1EjQ7o5XgvxLPOeAXcvfr5QgnVhrboQ33hZwFScWIr2rJ1FeiSKLF6+OwqNmE7oxudsCMwxcNLPLsekkWxqaKPzDlh0vdhucb/iur1HKC+uOm0ykwcU714H2T4xpPJ06rwSYbSQ8xFSbRSMSvGfk3voawVBkowKBF7oWCCLju+DyKkhJontrQrRYSGFb4physSSWAIKy0mWkLeAvX6562GE+hpYAN9R0pp9vJRvXDrJcZ/G613/pFTEbgQ1NxaaaAPgT+3x+gCLhVR075YiAlZpn/45+En5s4sRhmMCGtW0lG61W/tEusC0TcorVV33TuqVsWvP3LXwziJVUWdszPvk7J23Lpm0K9eQmvAPc/6pfjXrTr6H0o+dLyCW6kA7sP5HrlJx60d5PXV2KD8bZb1c+W+d1oDoUNmI2/SNJ9bXgc3BKH1Nd8RD8QVsPqY+Zs7YKPKPb5PTH6l0rOVvu3Qy6bDMjlKt7nwayD8ZTf+Wf4cyOQtwxVVbm0Z/EaNf25/Y=
+  app: instagramchallenge1
+  on:
+    repo: carlfjones/instagram-challenge
+    branch: master
